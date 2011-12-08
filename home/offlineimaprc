@@ -1,0 +1,17 @@
+[general]
+accounts = Gmail
+maxsyncaccounts = 1
+
+[Account Gmail]
+localrepository = Local
+remoterepository = Remote
+autorefresh = 5
+
+[Repository Local]
+type = Maildir
+localfolders = ~/Maildir
+
+[Repository Remote]
+type = Gmail
+remotehost = imap.gmail.com
+remoteuser = yagneshmsc@gmail.com
