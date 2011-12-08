@@ -4,6 +4,11 @@
 #
 # Description:
 
+function chk-env()
+{
+    echo
+}
+
 function cd_to_app_dir ()
 {
     case $TYPE in
@@ -11,6 +16,13 @@ function cd_to_app_dir ()
             cd $REPO_DIR
             ;;
     esac
+}
+
+function install_debs ()
+{
+    for deb in $DEBS ; do
+        sudo apt-get install $deb
+    done
 }
 
 # utils.sh ends here

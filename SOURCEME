@@ -5,6 +5,7 @@ export BASE=$HOME
 # ------NO NEED TO EDIT BELOW ----------------
 # simple check
 export SCRIPTS_DIR=$(cd `dirname $BASH_SOURCE`;pwd)
+export USER=`whoami`
 
 # load functions from lib
 . $SCRIPTS_DIR/lib/utils.sh

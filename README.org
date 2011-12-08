@@ -1,0 +1,10 @@
+
+* About
+Bunch of files to make installations(on mainly ubuntu right now) &
+building(mainly with gcc) of different gnu and linux utilities.
+* start point
+should start with sourcing the "SOURCEME" file
+#+source: sourcing
+#+begin_src sh
+source SOURCEME
+#+end_src
