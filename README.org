@@ -2,9 +2,11 @@
 * About
 Bunch of files to make installations(on mainly ubuntu right now) &
 building(mainly with gcc) of different gnu and linux utilities.
-* start point
+* Start
 should start with sourcing the "SOURCEME" file
 #+source: sourcing
 #+begin_src sh
 source SOURCEME
 #+end_src
+* License:
+GPLv3 or later

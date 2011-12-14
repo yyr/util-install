@@ -1,6 +1,34 @@
 [general]
+# This should contain a comma delimited list of all identifiers of the accounts
+# that are to be synced
+accounts = main
+# If there are two accounts; `main' and `alternative'...
+#accounts = main,alternative
+
+[Account main]
+# The identifier for the local repository; e.g., the maildir that offlineimap
+# will sync with an IMAP server
+localrepository = main-local
+# The identifier for the remote repository. This is the actual IMAP, which is
+# usually foreign to the system
+remoterepository = main-remote
+
+[Repository main-local]
+# Currently, offlineimap only supports maildir and IMAP for local repositories
+type = Maildir
+# Where should the mail be placed?
+localfolders = ~/Maildir
+
+[Repository main-remote]
+# Remote repos can be IMAP or Gmail, the latter being a preconfigured IMAP
+type = IMAP
+remotehost = host.domain.tld
+remoteuser = username
+
+[general]
 accounts = Gmail
 maxsyncaccounts = 1
+status_backend = sqlite
 
 [Account Gmail]
 localrepository = Local
