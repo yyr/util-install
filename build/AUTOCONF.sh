@@ -2,16 +2,17 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/CLOOG.env
+. $SCRIPTS_DIR/M4.env
+. $SCRIPTS_DIR/AUTOCONF.env
 cd $BASE/src/
 cd ${DIR}
 echo $(pwd)
 
-./configure --prefix=$SZIP_ROOT | tee ${APP}.${COMP}.config
+./configure --prefix=$AUTOCONF_ROOT --with-m4=$M4_ROOT | tee ${APP}.${COMP}.config
 make clean 2>&1 | tee ${APP}.${COMP}.clean
 make 2>&1 | tee ${APP}.${COMP}.make
 make check 2>&1 | tee ${APP}.${COMP}.check
 make install 2>&1 | tee ${APP}.${COMP}.install
 
 
-# CLOOG.sh ends here
+# AUTOCONF.sh ends here
