@@ -8,5 +8,19 @@ should start with sourcing the "SOURCEME" file
 #+begin_src sh
 source SOURCEME
 #+end_src
+
+* where they get installed
+by default $HOME/local and download sources will be in $HOME/src/
+can be changed/set in SOURCEME file
+
+* utilities automated so far
+- m4 (to build autoconf)
+- autoconf
+
+- expat (for building git)
+- curl
+- git
+
+
 * License:
 GPLv3 or later
