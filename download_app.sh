@@ -52,8 +52,9 @@ function update_util_files()
             unzip ${APP}.${EXT}
             echo unzip ${APP}.${EXT} \# $pack >> $EXTRACT_SRC ;;
         * )
-            echo "dont know how to extract this one:" ${APP}.${EXT} >> $EXTRACT_SRC ;;
-            echo echo "dont know how to extract this one:" ${APP}.${EXT} >> $EXTRACT_SRC ;;
+            echo "dont know how to extract this one:" ${APP}.${EXT}
+            echo echo "dont know how to extract this one:" ${APP}.${EXT} >> $EXTRACT_SRC
+            ;;
     esac
 }
 
