@@ -8,9 +8,9 @@ cd $BASE/src/
 cd ${DIR}
 echo $(pwd)
 
-export PKG_CONFIG_PATH=$FUSE_ROOT
-SSHFS_CFLAGS=-I$FUSE_ROOT/include
-SSHFS_LIBS=-L$FUSE_ROOT/lib
+export SSHFS_LIBS=-L$FUSE_ROOT/lib
+export SSHFS_CFLAGS=" -D_FILE_OFFSET_BITS=64 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -lglib-2.0 -lgthread-2.0 -lfuse -lrt -ldl -I${FUSE_ROOT}/include/fuse "
+
 
 ./configure --prefix=$SSHFS_ROOT --exec-prefix=$SSHFS_ROOT \
     | tee ${APP}.${COMP}.config
