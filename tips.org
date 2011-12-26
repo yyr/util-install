@@ -3,3 +3,10 @@
 ** pkg-config
 for example to get all linker flags for using glib-2.0
 : pkg-config --cflags --libs glib-2.0
+* Notes
+** Mit Scheme
+to bootstrap from source this needs any version of Scheme itself. else
+using c not native build(obviously slower) is possible
+
+for non-native
+: etc/make-liarc.sh
