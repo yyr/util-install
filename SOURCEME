@@ -1,7 +1,6 @@
 # location of automation scripts
 export BASE=$HOME
-compiler=GCC
-
+compiler=gcc
 
 ########################################################################
 # ------NO NEED TO EDIT BELOW ----------------
@@ -21,15 +20,18 @@ echo SCRIPTS_DIR=$SCRIPTS_DIR
 echo '*****************************************************************'
 echo
 
+# some internal varialbles
+export appsdir=$SCRIPTS_DIR/apps
+
 # unset first
 unset COMP CC CFLAGS CXX CXXFLAGS CPP CXXFLAGS FC F77 F9X FFLAGS
 
 # load envis for the COMPILER
-if [ -f $SCRIPTS_DIR/${compiler}.env ]; then
-    . $SCRIPTS_DIR/${compiler}.env
+if [ -f $SCRIPTS_DIR/${compiler}/compiler.env ]; then
+    . $SCRIPTS_DIR/${compiler}/compiler.env
 else
-    echo ERROR: no file named $SCRIPTS_DIR/${compiler}.env
-    exit 128
+    echo ERROR: no file named $SCRIPTS_DIR/${compiler}/compiler.env
+    return 128
 fi
 
 echo "-- Compiler vars are set --
