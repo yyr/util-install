@@ -3,13 +3,14 @@
 # Created: Saturday, May  7 2011
 #
 . $SCRIPTS_DIR/SOURCEME
-. $SCRIPTS_DIR/CURL.env
-. $SCRIPTS_DIR/EXPAT.env
-. $SCRIPTS_DIR/GIT.env
+. $SCRIPTS_DIR/apps/CURL.env
+. $SCRIPTS_DIR/apps/EXPAT.env
+. $SCRIPTS_DIR/apps/GIT.env
 
 cd_to_app_dir
 echo ${PWD}
 
+autoconf
 make clean
 # sudo apt-get build-dep git-core git-doc
 ./configure --prefix=$GIT_ROOT \
