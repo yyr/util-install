@@ -3,10 +3,9 @@
 #    File: EMACS_TRUNK.sh
 # Created: 2011-12-19 15:54
 #
-. $SCRIPTS_DIR/source_me
-. $SCRIPTS_DIR/AUTOCONF.env
-. $SCRIPTS_DIR/CURL.env
-. $SCRIPTS_DIR/EMACS_TRUNK.env
+. $SCRIPTS_DIR/apps/AUTOCONF.env
+. $SCRIPTS_DIR/apps/CURL.env
+. $SCRIPTS_DIR/apps/EMACS_TRUNK.env
 
 cd $BASE/${DIR}
 

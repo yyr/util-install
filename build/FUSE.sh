@@ -2,7 +2,7 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/FUSE.env
+. $SCRIPTS_DIR/apps/FUSE.env
 cd $BASE/src/
 cd ${DIR}
 echo $(pwd)

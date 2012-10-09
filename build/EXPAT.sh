@@ -4,7 +4,7 @@
 # Created: 2011-12-19 16:16
 #
 
-. $SCRIPTS_DIR/EXPAT.env
+. $SCRIPTS_DIR/apps/EXPAT.env
 
 cd $BASE/src/${DIR}
 

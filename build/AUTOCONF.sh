@@ -2,8 +2,8 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/M4.env
-. $SCRIPTS_DIR/AUTOCONF.env
+. $SCRIPTS_DIR/apps/M4.env
+. $SCRIPTS_DIR/apps/AUTOCONF.env
 cd $BASE/src/
 cd ${DIR}
 echo $(pwd)

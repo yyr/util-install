@@ -2,7 +2,7 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/CLOOG.env
+. $SCRIPTS_DIR/apps/CLOOG.env
 cd $BASE/src/
 cd ${DIR}
 echo $(pwd)

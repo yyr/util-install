@@ -3,8 +3,7 @@
 #    File: CURL.sh
 # Created: Tuesday, December  6 2011
 #
-. $SCRIPTS_DIR/SOURCEME
-. $SCRIPTS_DIR/CURL.env
+. $SCRIPTS_DIR/apps/CURL.env
 
 cd $BASE/src/${DIR}
 

@@ -2,7 +2,7 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/SCHEME.env
+. $SCRIPTS_DIR/apps/SCHEME.env
 cd $BASE/src/
 cd ${DIR}/src
 echo $(pwd)

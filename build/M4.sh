@@ -2,7 +2,7 @@
 #
 # Description:
 
-. $SCRIPTS_DIR/M4.env
+. $SCRIPTS_DIR/apps/M4.env
 cd $BASE/src/
 cd ${DIR}
 echo $(pwd)

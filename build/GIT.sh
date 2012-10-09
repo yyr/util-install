@@ -2,7 +2,6 @@
 #
 # Created: Saturday, May  7 2011
 #
-. $SCRIPTS_DIR/SOURCEME
 . $SCRIPTS_DIR/apps/CURL.env
 . $SCRIPTS_DIR/apps/EXPAT.env
 . $SCRIPTS_DIR/apps/GIT.env
