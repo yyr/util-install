@@ -6,8 +6,7 @@
 . $SCRIPTS_DIR/apps/EXPAT.env
 . $SCRIPTS_DIR/apps/GIT.env
 
-cd_to_app_dir
-echo ${PWD}
+cd $BASE/src/${DIR}
 
 autoconf
 make clean
